@@ -1,5 +1,6 @@
 package com.example.springBootSample.custumer;
 
+import com.example.springBootSample.custumer.exception.NotFoundException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -23,5 +24,5 @@ private final CustomerRepositories customerRepositories;
                 stream().
                 filter(customer -> customer.getId().equals(id)).
                 findFirst().
-                orElseThrow(() -> new IllegalStateException("customer not find"));
+                orElseThrow(() -> new NotFoundException("customer " + id +  " not find"));
 }}
