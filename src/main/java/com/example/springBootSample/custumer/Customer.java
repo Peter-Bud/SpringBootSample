@@ -1,34 +1,33 @@
 package com.example.springBootSample.custumer;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import org.springframework.data.annotation.Id;
 
+@Entity
+@Table
 public class Customer{
-    private final Long id;
+    @Id
+    public  Long id;
 
-    @NotBlank
-    private final String name;
 
-    @NotBlank
+    @NotBlank(message = "name should not be blank")
+    public String name;
+
+    @NotBlank(message = "password should not be blank")
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private final String password;
+    public String password;
 
     @NotBlank
     @Email
-    private final String email;
+    public String email;
 
-    public Customer(
-            Long id,
-            String name,
-            String password,
-            String email) {
-        this.id = id;
-        this.name = name;
-        this.password = password;
-        this.email = email;
-    }
 
+
+    @jakarta.persistence.Id
     public Long getId() {
         return id;
     }
@@ -41,6 +40,27 @@ public class Customer{
         return password;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
         return "Customer{" +
@@ -50,4 +70,5 @@ public class Customer{
                 ", email='" + email + '\'' +
                 '}';
     }
+
 }

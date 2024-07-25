@@ -1,28 +1,42 @@
 package com.example.springBootSample.custumer;
 
 import com.example.springBootSample.custumer.exception.NotFoundException;
-import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
-@Component
+@Service
 public class CustomerService {
-private final CustomerRepositories customerRepositories;
+    private final CustomerRepository customerRepository;
 
-    public CustomerService(CustomerRepositories customerRepositories) {
-        this.customerRepositories = customerRepositories;
+    public CustomerService(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
     }
 
-    List<Customer> getCustomers(){
-        return customerRepositories.getCustomers();
+    public List<Customer> getCustomers() {
+        return customerRepository.findAll();
     }
 
-    Customer getCustomer(Long id){
-        return getCustomers().
-                stream().
-                filter(customer -> customer.getId().equals(id)).
-                findFirst().
-                orElseThrow(() -> new NotFoundException("customer " + id +  " not find"));
-}}
+    public Customer getCustomer(Long id) {
+        return customerRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException("Customer with id " + id + " not found"));
+    }
+
+    public void createNewCustomer(Customer customer) {
+        customerRepository.save(customer);
+    }
+
+    public void updateCustomer(Customer customer) {
+        if (!customerRepository.existsById(customer.getId())) {
+            throw new NotFoundException("Customer with id " + customer.getId() + " not found");
+        }
+        customerRepository.save(customer);
+    }
+
+    public void deleteCustomer(Long id) {
+        if (!customerRepository.existsById(id)) {
+            throw new NotFoundException("Customer with id " + id + " not found");
+        }
+        customerRepository.deleteById(id);
+    }
+}

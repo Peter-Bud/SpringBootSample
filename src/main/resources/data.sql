@@ -1,0 +1,54 @@
+
+INSERT INTO Customer (id, name, password, email) VALUES (1, 'John Doe', 'johndoe123', 'johndoe1@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (2, 'Jane Smith', 'janesmith456', 'janesmith2@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (3, 'Alice Johnson', 'alicejohnson789', 'alicejohnson3@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (4, 'Bob Brown', 'bobbrown321', 'bobbrown4@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (5, 'Charlie Davis', 'charliedavis654', 'charliedavis5@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (6, 'Diana Evans', 'dianaevans987', 'dianaevans6@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (7, 'Evan Foster', 'evanfoster123', 'evanfoster7@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (8, 'Fiona Green', 'fionagreen456', 'fionagreen8@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (9, 'George Harris', 'georgeharris789', 'georgeharris9@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (10, 'Hannah Irwin', 'hannahirwin321', 'hannahirwin10@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (11, 'Isaac Jenkins', 'isaacjenkins654', 'isaacjenkins11@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (12, 'Jack Kelly', 'jackkelly987', 'jackkelly12@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (13, 'Kathy Lewis', 'kathylewis123', 'kathylewis13@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (14, 'Liam Martin', 'liammartin456', 'liammartin14@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (15, 'Mia Nelson', 'mianelson789', 'mianelson15@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (16, 'Nathan Owen', 'nathanowen321', 'nathanowen16@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (17, 'Olivia Parker', 'oliviaparker654', 'oliviaparker17@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (18, 'Paul Quinn', 'paulquinn987', 'paulquinn18@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (19, 'Quinn Rivera', 'quinnrivera123', 'quinnrivera19@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (20, 'Rachel Scott', 'rachelscott456', 'rachelscott20@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (21, 'Sam Taylor', 'samtaylor789', 'samtaylor21@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (22, 'Tina Underwood', 'tinaunderwood321', 'tinaunderwood22@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (23, 'Uma Villanueva', 'umavillanueva654', 'umavillanueva23@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (24, 'Victor White', 'victorwhite987', 'victorwhite24@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (25, 'Wendy Xander', 'wendyxander123', 'wendyxander25@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (26, 'Xander Young', 'xanderyoung456', 'xanderyoung26@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (27, 'Yara Zimmerman', 'yarazimmerman789', 'yarazimmerman27@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (28, 'Zack Adams', 'zackadams321', 'zackadams28@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (29, 'Amy Baker', 'amybaker654', 'amybaker29@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (30, 'Brian Clark', 'brianclark987', 'brianclark30@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (31, 'Carol Diaz', 'caroldiaz123', 'caroldiaz31@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (32, 'David Edwards', 'davidedwards456', 'davidedwards32@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (33, 'Eva Flores', 'evaflores789', 'evaflores33@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (34, 'Frank Garcia', 'frankgarcia321', 'frankgarcia34@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (35, 'Grace Hall', 'gracehall654', 'gracehall35@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (36, 'Henry King', 'henryking987', 'henryking36@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (37, 'Ivy Lopez', 'ivylopez123', 'ivylopez37@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (38, 'Jake Moore', 'jakemoore456', 'jakemoore38@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (39, 'Laura Nguyen', 'lauranguyen789', 'lauranguyen39@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (40, 'Mark Ortiz', 'markortiz321', 'markortiz40@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (41, 'Nina Patel', 'ninapatel654', 'ninapatel41@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (42, 'Oscar Ramirez', 'oscarramirez987', 'oscarramirez42@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (43, 'Patricia Stewart', 'patriciastewart123', 'patriciastewart43@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (44, 'Robert Thomas', 'robertthomas456', 'robertthomas44@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (45, 'Sara Usman', 'sarausman789', 'sarausman45@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (46, 'Tom Valdez', 'tomvaldez321', 'tomvaldez46@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (47, 'Uma Walters', 'umawalters654', 'umawalters47@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (48, 'Victor Xiong', 'victorxiong987', 'victorxiong48@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (49, 'Wendy Yang', 'wendyyang123', 'wendyyang49@example.com');
+INSERT INTO Customer (id, name, password, email) VALUES (50, 'Xavier Zane', 'xavierzane456', 'xavierzane50@example.com');
+
+
+

@@ -13,5 +13,8 @@ public class SpringBootSampleApplication {
 		SpringApplication.run(SpringBootSampleApplication.class, args);
 	}
 
-
+	@GetMapping("/")
+	public String home() {
+		return "Hello, World!";
+	}
 }

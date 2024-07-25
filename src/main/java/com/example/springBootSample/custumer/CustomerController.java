@@ -4,8 +4,9 @@ import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @RequestMapping(path = "api/v1/customer")
-@RestController()
+@RestController
 public class CustomerController {
     private final CustomerService customerService;
 
@@ -13,30 +14,28 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @GetMapping(value = "all")
-    List<Customer> getCustomers(){
-         return customerService.getCustomers();
+    @GetMapping("all")
+    public List<Customer> getCustomers() {
+        return customerService.getCustomers();
     }
 
-    @GetMapping(path = "{customerId}")
-    Customer getCustomer(@PathVariable("customerId")Long id) {
+    @GetMapping("{customerId}")
+    public Customer getCustomer(@PathVariable("customerId") Long id) {
         return customerService.getCustomer(id);
     }
 
-
     @PostMapping
-    void createNewCustomer(@Valid @RequestBody Customer customer){
-        System.out.print(customer);
+    public void createNewCustomer(@Valid @RequestBody Customer customer) {
+        customerService.createNewCustomer(customer);
     }
 
     @PutMapping
-    void updateCustomer(@RequestBody Customer customer){
-        System.out.print(customer);
+    public void updateCustomer(@RequestBody Customer customer) {
+        customerService.updateCustomer(customer);
     }
 
-    @DeleteMapping(path = "{customerId}")
-    void deleteCustomer(@PathVariable("customerId") Long id){
-        System.out.println(id + " User was deleted");
+    @DeleteMapping("{customerId}")
+    public void deleteCustomer(@PathVariable("customerId") Long id) {
+        customerService.deleteCustomer(id);
     }
-
 }
