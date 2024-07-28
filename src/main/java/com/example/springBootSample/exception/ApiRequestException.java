@@ -1,4 +1,4 @@
-package com.example.springBootSample.custumer.exception;
+package com.example.springBootSample.exception;
 
 public class ApiRequestException extends RuntimeException{
     public ApiRequestException() {

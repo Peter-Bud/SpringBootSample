@@ -1,6 +1,6 @@
 package com.example.springBootSample.custumer;
 
-import com.example.springBootSample.custumer.exception.NotFoundException;
+import com.example.springBootSample.exception.NotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
